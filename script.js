@@ -5,19 +5,10 @@ function typeWords(words, element) {
     index++;
     if (index === words.length) {
       clearInterval(intervalId);
-      setTimeout(() => {
-        typeWords(words, element);
-      }, 1500);
     }
   }, 100);
 }
 
-const words = [
-  "Linguistics",
-  "Sociolinguistics",
-  "Language Policy Planning",
-  "Language Revitalisation"
-];
-
-const typeWordsEl = document.querySelector("#type-words");
-typeWords(words, typeWordsEl);
+const words = ["Linguistics", "Sociolinguistics", "Language Policy Planning", "Language Revitalisation"];
+const element = document.getElementById("words");
+typeWords(words, element);
