@@ -1,16 +1,23 @@
 function typeWords(words, element) {
   let index = 0;
-  const intervalId = setInterval(() => {
-    element.textContent += words[index][0];
-    words[index] = words[index].slice(1);
-    if (words[index].length === 0) {
-      index++;
-      if (index === words.length) {
-        clearInterval(intervalId);
-      }
+  let innerIndex = 0;
+  let currentWord = '';
+  let intervalId = setInterval(() => {
+    if (index >= words.length) {
+      clearInterval(intervalId);
+      return;
     }
-  }, 100); // Adjusted from 200ms to 100ms for faster typing
+    currentWord = words[index];
+    element.textContent += currentWord[innerIndex];
+    innerIndex++;
+    if (innerIndex === currentWord.length) {
+      index++;
+      innerIndex = 0;
+      element.textContent += ' ';
+    }
+  }, 100);
 }
+
 
 const words = ["Linguistics", "Sociolinguistics", "Language Policy Planning", "Language Revitalisation"];
 const element = document.getElementById("typing-effect");
