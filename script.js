@@ -2,7 +2,7 @@ function typeWords(words, element) {
   let wordIndex = 0;
   let letterIndex = 0;
   let direction = 1;
-  let intervalId = setInterval(() => {
+  setInterval(() => {
     const word = words[wordIndex];
     const letters = word.slice(0, letterIndex + 1);
     element.textContent = letters;
@@ -30,6 +30,7 @@ function typeWords(words, element) {
     }
   }, 75);
 }
+
 const words = ['Linguistics', 'Sociolinguistics', 'Language Policy Planning', 'Language Revitalisation'];
 const element = document.querySelector('#type-words');
 typeWords(words, element);
