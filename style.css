@@ -1,76 +1,86 @@
+/* Body Styling */
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+  font-family: sans-serif;
 }
 
-#container {
-  display: flex;
-  flex-direction: row;
-  background-color: #fff;
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
-}
-
+/* Header Styling */
 header {
-  flex: 1;
+  background-color: #800080;
+  color: white;
   text-align: center;
   padding: 20px;
 }
 
 h1 {
-  font-size: 40px;
-  margin-bottom: 10px;
-}
-
-h2 {
-  font-size: 30px;
-}
-
-section {
-  flex: 2;
-  padding: 20px;
-}
-
-h3 {
-  font-size: 28px;
-  margin-bottom: 20px;
-}
-
-#type-words {
-  font-size: 36px;
-  font-weight: bold;
-}
-
-#right-column {
-  flex: 1;
-  background-color: #800080;
-  color: #fff;
-  padding: 20px;
-}
-
-#right-column h3 {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-#right-column ul {
-  list-style: none;
-  padding: 0;
   margin: 0;
 }
 
-#right-column li {
+/* Navigation Styling */
+nav {
+  background-color: #800080;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  height: 100%;
+  width: 10%;
+  position: fixed;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
   margin-bottom: 10px;
 }
 
-#right-column a {
-  color: #fff;
+nav a {
+  color: white;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 16px;
 }
 
-#right-column a:hover {
-  text-decoration: underline;
+/* Section Styling */
+section {
+  padding: 50px;
+  display: block;
+}
+
+#section1 {
+  background-color: #F5F5F5;
+}
+
+#section2 {
+  background-color: #E8E8E8;
+}
+
+#section3 {
+  background-color: #DADADA;
+}
+
+#section4 {
+  background-color: #CCCCCC;
+}
+
+#section5 {
+  background-color: #BEBEBE;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #800080;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
 }
