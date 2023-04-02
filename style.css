@@ -1,0 +1,15 @@
+body {
+  background-color: #f1f1f1;
+}
+
+/* Set the color of the header text */
+header {
+  color: #333;
+}
+
+/* Style the section headings */
+h2 {
+  font-size: 1.5em;
+  color: #444;
+  margin-bottom: 0.5em;
+}
