@@ -1,4 +1,4 @@
-unction typeWords(words, element) {
+function typeWords(words, element) {
   let index = 0;
   const intervalId = setInterval(() => {
     element.textContent += words[index][0];
