@@ -1,12 +1,25 @@
 function typeWords(words, element) {
-  let index = 0;
-  const intervalId = setInterval(() => {
-    element.textContent += words[index];
-    index++;
-    if (index === words.length) {
+  let wordIndex = 0;
+  let letterIndex = 0;
+  let intervalId;
+
+  function typeNextLetter() {
+    if (letterIndex < words[wordIndex].length) {
+      element.textContent += words[wordIndex][letterIndex];
+      letterIndex++;
+    } else {
       clearInterval(intervalId);
+      wordIndex++;
+      if (wordIndex === words.length) {
+        wordIndex = 0;
+      }
+      letterIndex = 0;
+      element.textContent = "";
+      intervalId = setInterval(typeNextLetter, 200);
     }
-  }, 200);
+  }
+
+  intervalId = setInterval(typeNextLetter, 200);
 }
 
 
