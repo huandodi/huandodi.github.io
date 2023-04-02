@@ -1,86 +1,80 @@
-/* Body Styling */
-body {
+/* Wrapper */
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
 }
 
-/* Header Styling */
+/* Header */
 header {
-  background-color: #800080;
-  color: white;
-  text-align: center;
-  padding: 20px;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 8vh;
 }
 
-h1 {
-  margin: 0;
-}
-
-/* Navigation Styling */
+/* Navigation */
 nav {
   background-color: #800080;
-  color: white;
-  text-align: center;
-  padding: 10px;
-  height: 100%;
-  width: 10%;
-  position: fixed;
+  height: 84vh;
+  width: 15%;
+  position: sticky;
+  top: 8vh;
 }
 
 nav ul {
-  list-style-type: none;
   margin: 0;
   padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
 }
 
 nav li {
-  margin-bottom: 10px;
+  text-align: center;
 }
 
 nav a {
-  color: white;
+  color: #fff;
   text-decoration: none;
-  font-size: 16px;
-}
-
-/* Section Styling */
-section {
-  padding: 50px;
+  font-size: 1.2rem;
   display: block;
+  padding: 10px;
 }
 
-#section1 {
-  background-color: #F5F5F5;
+nav a:hover {
+  background-color: #fff;
+  color: #800080;
 }
 
-#section2 {
-  background-color: #E8E8E8;
+/* Main */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 84vh;
+  width: 85%;
+  overflow-y: auto;
 }
 
-#section3 {
-  background-color: #DADADA;
-}
-
-#section4 {
-  background-color: #CCCCCC;
-}
-
-#section5 {
-  background-color: #BEBEBE;
-}
-
-/* Footer Styling */
-footer {
-  background-color: #800080;
-  color: white;
-  text-align: center;
+section {
+  margin: 50px;
   padding: 20px;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+  border: 1px solid #000;
+  width: 80%;
 }
 
-footer p {
-  margin: 0;
-}
+/* Footer */
+footer {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
