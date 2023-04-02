@@ -1,29 +1,23 @@
 function typeWords(words, element) {
   let wordIndex = 0;
   let letterIndex = 0;
-  let intervalId;
-
-  function typeNextLetter() {
+  const intervalId = setInterval(() => {
     if (letterIndex < words[wordIndex].length) {
       element.textContent += words[wordIndex][letterIndex];
       letterIndex++;
     } else {
-      clearInterval(intervalId);
       wordIndex++;
-      if (wordIndex === words.length) {
-        wordIndex = 0;
-      }
       letterIndex = 0;
-      element.textContent = "";
-      intervalId = setInterval(typeNextLetter, 200);
+      element.textContent = '';
+      if (wordIndex === words.length) {
+        clearInterval(intervalId);
+      }
     }
-  }
-
-  intervalId = setInterval(typeNextLetter, 200);
+  }, 50);
 }
 
-
-const words = ["Linguistics", "Sociolinguistics", "Language Policy Planning", "Language Revitalisation"];
-const element = document.querySelector("#typing");
-
-typeWords(words, element);
+window.addEventListener('load', () => {
+  const words = ['Linguistics', 'Sociolinguistics', 'Language Policy Planning', 'Language Revitalisation'];
+  const wordElement = document.getElementById('word-display');
+  typeWords(words, wordElement);
+});
