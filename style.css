@@ -16,9 +16,15 @@ header {
   align-items: center;
   justify-content: center;
   height: 100vh;
+  min-height: 100vh;
+  width: 20%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #f1f1f1;
+  overflow-x: hidden;
+  padding-top: 60px;
 }
-
-
 
 /* Navigation */
 nav {
