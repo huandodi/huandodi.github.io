@@ -36,6 +36,22 @@
   margin-bottom: 20px;
 }
 
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.social a {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.social a i {
+  font-size: 24px;
+}
+
 .navigation {
   margin: 0;
   padding: 0;
