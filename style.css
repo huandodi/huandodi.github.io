@@ -5,7 +5,8 @@
   right: 0;
   top: 0;
   bottom: 0;
-  width: calc(100% + 10%);
+  width: calc(30% + 10%);
+  float: left;
   background-color: #F6D6FF;
   padding: 20px;
   padding-right: 40px;
