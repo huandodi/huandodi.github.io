@@ -57,3 +57,27 @@
   padding: 0;
   list-style-type: none;
 }
+
+.navigation ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation li {
+  margin: 0 10px;
+}
+
+.navigation a {
+  display: block;
+  padding: 10px 0;
+  color: #333;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.navigation a:hover {
+  color: #f00;
+}
+
