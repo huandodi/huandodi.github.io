@@ -31,25 +31,27 @@
   text-align: center;
 }
 
+.navigation {
+  float: right;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
 .navigation ul {
   list-style: none;
-  margin-top: 50px;
+  margin: 0;
   padding: 0;
+  display: flex;
 }
 
 .navigation li {
-  margin-bottom: 20px;
+  margin: 0 10px;
 }
 
 .navigation a {
-  display: block;
-  font-size: 24px;
-  font-weight: bold;
-  text-align: center;
+  color: #fff;
   text-decoration: none;
-  color: #333;
-}
-
-.navigation a:hover {
-  color: #666;
+  font-size: 16px;
+  font-weight: bold;
 }
