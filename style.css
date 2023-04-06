@@ -6,8 +6,9 @@
   top: 0;
   bottom: 0;
   width: calc(100% + 10%);
-  background-color: #f1f1f1;
+  background-color: #F6D6FF;
   padding: 20px;
+  padding-right: 40px;
 }
 
 .header {
