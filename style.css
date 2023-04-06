@@ -1,29 +1,42 @@
-.container {
-  display: flex;
-  justify-content: flex-end;
-  position: fixed;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  width: 30%;
-  float: left;
-  background-color: #F6D6FF;
+.content-container {
+  width: 70%;
+  margin-right: 5%;
+  margin-top: 0px; /* add some top margin to push content down and avoid overlapping */
   padding: 20px;
-  padding-right: 40px;
+  background-color: #FFFFFF;
 }
 
+
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  max-width: 1200px;
+  margin-top: 0px;
+  padding:10px;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+
 .header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 25%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  text-align: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #F6D6FF;
 }
 
 .logo {
   width: 100%;
   max-width: 200px;
-  display: block;
   margin-top: 20px;
   margin-bottom: 10px;
 }
@@ -31,11 +44,13 @@
 .name {
   font-size: 24px;
   margin-bottom: 0;
+  text-align: center;
 }
 
 .subtitle {
   font-size: 16px;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .social {
@@ -54,7 +69,16 @@
   font-size: 24px;
 }
 
+.intro {
+  text-align: center;
+  font-size: 15px;
+}
+
 .navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -63,6 +87,7 @@
 .navigation li {
   display: block;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .navigation li a {
@@ -75,10 +100,82 @@
   transition: background-color 0.2s ease;
 }
 
-.navigation li a:hover {
-  background-color: #555;
+.bio {
+	padding: 10px;
+	font-size: 25px;
+	background-color: #F6D6FF
 }
 
-.content-container {
-    width: 70%; /* adjust width as needed */
-    float: left;
+.title {
+	text-align: center;
+	font-size: 30px;
+}
+
+.qual {
+	text-align: center;
+}
+
+.qual_local {
+	font-size: 13px;
+}
+
+.qual_date {
+	font-size: 15px;
+	font-style: italic;
+}
+
+.qual_focus {
+	font-size: 15px;
+}
+
+.BA {
+	
+}
+
+.MSC {
+	
+}
+
+.PHD {
+	
+}
+
+.qual-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+  background-color: #F6D6FF
+}
+
+.BA, .MSC, .PHD {
+  flex-basis: 30%;
+}
+
+.languages {
+	text-align: center;
+}
+
+.langname {
+	font-weight: bold;
+	
+}
+
+.lang-container {
+	padding: 25px;
+	background-color: #F6D6FF
+	
+}
+
+.skill {
+  text-align: center; /* Right-align text */
+  padding-top: 10px; /* Add top padding */
+  padding-bottom: 10px; /* Add bottom padding */
+  color: white; /* White text color */
+}
+
+.eng {padding: 2.5px; width: 100%; background-color:#04AA6D;}
+.mandarin {padding: 2.5px; width: 100%; background-color:#04AA6D;}
+.hungarian {padding: 2.5px; width: 66.667%; background-color:#2196F3;}
+.taigi {padding: 2.5px; width: 66.667%; background-color:#2196F3;}
+.german {padding: 2.5px; width: 50%; background-color:#808080;}
+.japanese {padding: 2.5px; width: 16.66667%; background-color:#f44336;}
