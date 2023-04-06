@@ -58,26 +58,21 @@
   list-style-type: none;
 }
 
-.navigation ul {
-  display: flex;
-  justify-content: space-between;
-}
-
 .navigation li {
-  margin: 0 10px;
-}
-
-.navigation a {
   display: block;
-  padding: 10px 0;
-  color: #333;
+  margin-bottom: 10px;
+}
+
+.navigation li a {
+  display: block;
+  padding: 10px;
   text-decoration: none;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 16px;
+  color: #fff;
+  background-color: #333;
+  border-radius: 5px;
+  transition: background-color 0.2s ease;
 }
 
-.navigation a:hover {
-  color: #f00;
+.navigation li a:hover {
+  background-color: #555;
 }
-
