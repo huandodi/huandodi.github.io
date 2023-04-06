@@ -5,33 +5,39 @@
   right: 0;
   top: 0;
   bottom: 0;
-  width: 200px;
+  width: calc(100% + 10%);
   background-color: #f1f1f1;
   padding: 20px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.logo {
+  width: 100%;
+  max-width: 200px;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.name {
+  font-size: 24px;
+  margin-bottom: 0;
+}
+
+.subtitle {
+  font-size: 16px;
+  margin-bottom: 20px;
 }
 
 .navigation {
   margin: 0;
   padding: 0;
   list-style-type: none;
-}
-
-.header {
-  margin-top: 40px;
-}
-
-img {
-  width: 100%;
-  display: block;
-  margin-bottom: 10px;
-}
-
-.name {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.subtitle {
-  font-size: 16px;
-  margin-bottom: 0;
 }
