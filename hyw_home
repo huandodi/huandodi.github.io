@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta viewport="width=device-width, initial-scale=1.0">
+    <title>HUAN József</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="grid">
+        <div class="title">
+           <div class="name">
+                <h1>潘悅朗 HUAN József</h1>
+                <h2>"Dódi"</h2>
+            </div> 
+
+            <div class="socials">
+                <a class="mastodon-logo" href="https://g0v.social/@dodi" target="_blank">
+                    <ion-icon name="logo-mastodon"></ion-icon></a>
+
+
+                <a class="twitter-logo" href="https://twitter.com/dodiiat" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
+
+                <a class="instagram-logo" href="https://www.instagram.com/dodiatlong/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+            </div>             
+        </div>
+        
+        <div class="header">
+            <h2>About</h2>
+            <p id="Basics">Greetings! My name is Dódi.<br><br>I am a <a href="https://www.ed.ac.uk/profile/jozsef-wells" target="_blank">linguistics PhD candidate</a> in the <a href="https://www.ed.ac.uk/ppls/linguistics-and-english-language" target="_blank">School of Philosophy, Psychology and Language Science</a> at <a href="https://www.ed.ac.uk/" target="_blank">the University of Edinburgh</a>.</p>
+
+            <br><p>My PhD research is on <i>Language Policy and Planning (LPP)</i> in Taiwan, specifically I am interested in the <i>Language Vitality</i> of <u>Taiwanese local</u> and <u>indigenous languages</u>.</p>
+            
+            <br><p class="location">From June 2023 to August 2023, I will be at the <a href="https://www1.ihp.sinica.edu.tw/en/People/Visiting" target="_blank">Institute of History and Philology, Academia Sinica</a> finishing my PhD as a junior visiting scholar.</p>
+            <p class="location"><i>I am based out of Edinburgh, Scotland, & Urbana, Illinois, USA.</i></p>
+            
+
+        </div>
+       
+        <div class="main"></div>
+
+        <div class="edu">
+            <div class ed><h2>Education</h2></div>
+
+            <div class="phd"><h3>Doctorate of Philosophy (PhD)</h3>
+                <p><i>Expected 2024</i></p>
+                <p><a href="https://www.ed.ac.uk/" target="_blank">University of Edinburgh</a></p>
+                <p>Linguistics</p></div>
+            
+            <div class="msc">
+                <h3>Master of Science (MSc)</h3>
+                <p><i>2018 Nov</i></p>
+                <p><a href="https://www.ed.ac.uk/" target="_blank">University of Edinburgh</a></p>
+               <p>Applied Linguistics</p>
+            </div>
+
+            <div class="ba"><h3>Bachelor of Arts (BA)</h3>
+                <p><i>2017 Apr</i></p>
+                <p><a href="https://www.northcentralcollege.edu/" target="_blank">North Central College</a> & <a href="https://eng.thu.edu.tw/" target="_blank">Tunghai University</a></p>
+                <p>Chinese and English Language teaching and learning</p>
+            </div>
+
+        </div>
+
+        <div class="sidebar">
+            <div class="langlist">
+                <div class="langh2">
+                    <h2>My languages</h2>
+                </div>
+                <div class="c2"><h4>Native/C2</h4>
+                    <ul>
+                        <li><strong>華語</strong> Mandarin</li>
+                        <li><strong>English</strong> 英語</li>
+                    </ul>
+                </div>
+                <div class="b2"><h4>B2-C1</h4>
+                    <ul>
+                        <li><strong>台語</strong> Tâi-gí</li>
+                        <li><strong>Magyar</strong> Hungarian</li>
+                        <li><strong>粵語</strong> Cantonese</li>
+                        <li><strong>Deuthsch</strong> German</li>
+                        <li><strong>יידיש </strong> Yiddish</li>
+                    </ul>
+                </div>
+                <div class="a2"><h4>A1-B1</h4>
+                    <ul>
+                        <li><strong>B. Melayu</strong> Malay</li>
+                        <li><strong>日本語</strong> Japanese</li>
+                        <li><strong>Français</strong> French</li>
+                        <li><strong>Português</strong> Portuguese</li>
+                        <li><strong>Español</strong> Spanish</li>
+                    </ul>
+                </div>
+                <div class="mis">
+                    <p>*These are ordered using <a href="https://www.coe.int/en/web/common-european-framework-reference-languages/level-descriptions" target="_blank">CEFR</a></p>
+                </div>
+            </div>
+               
+        </div>
+
+        <div class="research">
+            <h2>Research Interests</h2>
+            <ul>
+                <li>Language Policy and Planning (LLP)</li>
+                <li>Language Vitality</li>
+                <li>Language Revitalisation</li>
+                <li>Language and Identity</li>
+                <li>Language and Decolonisation</li>
+                <li>Language Activism</li>
+                <li>Taiwanese Languages</li>
+                <li>Southern Min Language Varieties</li>
+            </ul>
+        </div>
+
+        <div class="techskill">
+            <h2>Research Skills & Technical</h2>
+            <ul>
+                <li>Content analysis</li>
+                <li>Corpus construction</li>
+                <li>Corpus analysis</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Python</li>
+                <li>R</li>
+                <li>Exel/Google Sheets</li>
+            </ul>
+        </div>
+
+        <div class="mia">
+            <h3>My Name</h3>
+            <p><b>Huan</b> <small>[hɔan]</small> is Malaysian Hokkien surname - a rare reading of the common surname <a href="https://en.wikipedia.org/wiki/Pan_(surname)" target="_blank">潘</a>.<br><b>József</b> <small>[ˈjoːʒɛf]</small> is a Hungarian name derived from the Hebrew name <a href="https://en.wikipedia.org/wiki/Yosef" target="_blank">יוֹסֵף <i>Yōsef</i></a>.</p>
+
+            <br><p><b>潘</b> is my surname from above.<a href="https://thak.taigi.info/1913KamJitian/chheh/?page=289" target="_blank"><br><b>悅</b></a> has the meaning of happiness. <a href="https://thak.taigi.info/1913KamJitian/chheh/?page=457" target="_blank"><br><b>朗</b></a> holds the idea of brightness and clarity.</p>
+        </div>
+
+        <div class="acont"><h3>Academic Activities <small><i>(shortened)</i></small></h3>
+
+
+        <div class="publications">
+            <h4>Publications and Papers</h4>
+            <div class="csl-bib-body">
+                <div class="csl-entry">Huan-Wells, J. (2022). Mandarin-plus to Mandarin-inclusive : Conceptualising the New Pluralistic Language Policy in Taiwan. <i>Multiethnica</i>, <i>42</i>, 45–62. https://doi.org/10.33063/diva-505199</div>
+              </div>
+
+              <br>
+
+              <div>Wells, J. (2019). <i>Mandarin-plus to Mandarin-Inclusive: Conceptualising Language Policy in Taiwan</i> [Paper presentation]. Multidisciplinary Approaches in Language Policy and Planning Conference 2019, Toronto Canada.</div>
+
+              <br>
+
+            <p class="disclaim"><i>*I publish under the name <a href="https://www.researchgate.net/profile/Jozsef-Huan-Wells" target="_blank"><strong>József Huan-Wells.</strong></a></i></p>
+        </div>
+
+        <div class="teaching">
+            <h4>Teaching - Courses</h4>
+            <p>Issues in Applied Linguistics, <i>postgraduate</i></p>
+            <p>Linguistics and English Language 1A, <i>undergraduate</i></p>
+            <p>Linguistics and English Language 1B, <i>undergraduate</i></p>
+
+        </div>
+
+        <div class="otheract">
+        <h4>Other</h4>
+            <p>Reviewer of the Journal of the Undergraduate Linguistics Association of Britain, <i>United Kingdom</i></p>
+            <p>Co-Ordinator of the Language in Context Seminars, <i>University of Edinburgh, Scotland</i></p>
+        </div>
+        </div>
+        <div class="footer"><h5>huanjozsi [at] gmail [dot] com</h5></div>
+    </div>
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
