@@ -42,7 +42,7 @@
     grid-template-rows: auto;
     grid-template-areas: 
         "name name socials"
-        "name name langlink;
+        "name name langlink";
 }
 
 .name {
