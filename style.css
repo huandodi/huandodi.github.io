@@ -41,7 +41,8 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
-        "name name socials";
+        "name name socials"
+        "name name langlink;
 }
 
 .name {
@@ -66,6 +67,14 @@
 
 .socials {
     grid-area: socials;
+    background-color: aquamarine;
+    border-style: none;
+    padding: 3%;
+    text-align: right;
+}
+
+.langlink {
+    grid-area: langlink;
     background-color: aquamarine;
     border-style: none;
     padding: 3%;
