@@ -1,202 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>HUAN-WELLS, J</title>
-    <link href="style.css" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>József Huan‑Wells</title>
+  <meta name="description" content="Linguist. Language policy, revitalization, and digital infrastructures." />
+  <style>
+    /* ——— Base ——— */
+    :root {
+      --bg: #ffffff;
+      --fg: #0f172a; /* slate-900 */
+      --muted: #475569; /* slate-600 */
+      --link: #0ea5e9; /* sky-500 */
+      --border: #e2e8f0; /* slate-200 */
+      --accent: #0ea5e9;
+      --maxw: 72rem;
+    }
+    html { box-sizing: border-box; }
+    *, *::before, *::after { box-sizing: inherit; }
+    body {
+      margin: 0; background: var(--bg); color: var(--fg);
+      font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
+    }
+    a { color: var(--link); text-decoration: none; }
+    a:hover, a:focus { text-decoration: underline; }
+
+    /* ——— Layout ——— */
+    .wrap { max-width: var(--maxw); margin: 0 auto; padding: 2rem 1rem 4rem; }
+    header { border-bottom: 1px solid var(--border); margin-bottom: 1.5rem; }
+    .name { display: flex; align-items: baseline; gap: .75rem; flex-wrap: wrap; }
+    .name h1 { font-size: clamp(1.6rem, 3vw, 2.2rem); margin: 0.5rem 0 0.25rem; }
+    .name .han { font-weight: 500; color: var(--muted); }
+    .nav { display: flex; gap: 1rem; flex-wrap: wrap; margin: .5rem 0 1rem; }
+    .nav a { padding: .25rem .5rem; border-radius: .375rem; border: 1px solid var(--border); }
+
+    main { display: grid; gap: 2rem; }
+    @media (min-width: 900px) {
+      main { grid-template-columns: 2fr 1fr; align-items: start; }
+      .sidebar { position: sticky; top: 1rem; }
+    }
+
+    section { padding-block: .5rem; }
+    section h2 { font-size: 1.15rem; letter-spacing: .01em; margin: 0 0 .75rem; }
+
+    /* ——— Typographic utilities ——— */
+    .lead { color: var(--muted); }
+    .small { font-size: .9375rem; color: var(--muted); }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
+
+    /* ——— Lists ——— */
+    ul { padding-left: 1.15rem; margin: .25rem 0 .75rem; }
+    li { margin: .15rem 0; }
+
+    /* ——— Cards ——— */
+    .card { border: 1px solid var(--border); border-radius: .75rem; padding: 1rem; }
+    .grid-2 { display: grid; gap: 1rem; }
+    @media (min-width: 700px) { .grid-2 { grid-template-columns: 1fr 1fr; } }
+
+    /* ——— Definition list for Education ——— */
+    dl { margin: 0; }
+    dt { font-weight: 600; }
+    dd { margin: 0 0 .75rem 0; }
+
+    /* ——— Footer ——— */
+    footer { border-top: 1px solid var(--border); margin-top: 2rem; padding-top: 1rem; }
+
+    /* ——— Print ——— */
+    @media print {
+      .nav, .lang-switch { display: none !important; }
+      body { color: #000; }
+      a { color: #000; text-decoration: underline; }
+      .wrap { padding: 0; }
+      header, footer { border: 0; }
+    }
+  </style>
 </head>
 <body>
-    <div class="grid">
-        <div class="title">
-           <div class="name">
-                <h1>József Huan-Wells</h1>
-                <h2>潘悅朗</h2>
-            </div> 
+  <div class="wrap">
+    <header>
+      <div class="name" aria-label="Name">
+        <h1>József Huan‑Wells</h1>
+        <span class="han" lang="zh-Hant">潘悅朗</span>
+      </div>
+      <nav class="nav" aria-label="Language links">
+        <a href="index.html" hreflang="en" aria-current="page">English</a>
+        <a href="tgb_home.html" hreflang="nan-Latn">Tâi‑gí‑bûn</a>
+        <a href="hyw_home.html" hreflang="zh-Hant">華語文</a>
+      </nav>
+    </header>
 
-            <div class="socials">
-                
-            </div>
+    <main>
+      <div class="content">
+        <!-- About -->
+        <section id="about" aria-labelledby="about-h">
+          <h2 id="about-h">About</h2>
+          <p class="lead">
+            Linguist with a <a href="https://www.ed.ac.uk/" target="_blank" rel="noopener">PhD</a> in Linguistics from the University of Edinburgh (<a href="https://www.ed.ac.uk/ppls/linguistics-and-english-language" target="_blank" rel="noopener">School of Philosophy, Psychology and Language Science</a>).
+          </p>
+          <p>
+            Broadly, my work examines how languages live, change, and persist in multilingual societies, with emphasis on language revitalization and the role of digital infrastructures.
+          </p>
+          <p>
+            PhD thesis: <em>Reviving Bú‑gí: An Investigation of Language Policy and Language Management in Taiwan</em>. The three studies address <strong>status planning</strong> (Taiwan’s shift from official monolingualism to multilingualism; concept of “Mandarin‑inclusive”), <strong>language management</strong> (macro–micro implementation), and <strong>corpus planning</strong> (digital ethnography and digital discourse analysis of writing standardization and tool support).
+          </p>
+          <p class="small"><em>Based in Edinburgh, Scotland, and Urbana, Illinois, USA.</em></p>
+        </section>
 
-            <div class="langlink">
-                <p><a href="index.html" target="_blank">English</a> | <a href="tgb_home.html" target="_blank">Tâi-gí-bûn</a> | <a href="hyw_home.html" target="_blank">華語文</a></p>
-            </div>
+        <!-- Education -->
+        <section id="education" aria-labelledby="edu-h">
+          <h2 id="edu-h">Education</h2>
+          <div class="card">
+            <dl>
+              <dt>Doctor of Philosophy (PhD), Linguistics</dt>
+              <dd><span class="small">University of Edinburgh — <time datetime="2025-09">September 2025</time></span><br/>
+                  <span class="small">Junior Visiting Scholar, Institute of History and Philology, Academia Sinica — <time datetime="2023-06">June</time>–<time datetime="2023-08">August 2023</time></span>
+              </dd>
+              <dt>Master of Science (MSc), Applied Linguistics</dt>
+              <dd><span class="small">University of Edinburgh — <time datetime="2018-11">November 2018</time></span></dd>
+              <dt>Bachelor of Arts (BA), Chinese and English Language Teaching & Learning</dt>
+              <dd><span class="small">North Central College & Tunghai University — <time datetime="2017-04">April 2017</time></span></dd>
+            </dl>
+          </div>
+        </section>
 
-        </div>
-        
-        <div class="header">
-    <div class="header">
-    <h2>About</h2>
-    <p id="Basics">
-        Greetings! My name is József [ˈjoːʒɛf].<br><br>
-        I am a linguist with a <a href="https://www.ed.ac.uk/profile/jozsef-wells" target="_blank">PhD</a> in Linguistics from the 
-        <a href="https://www.ed.ac.uk/ppls/linguistics-and-english-language" target="_blank">School of Philosophy, Psychology and Language Science</a> 
-        at <a href="https://www.ed.ac.uk/" target="_blank">the University of Edinburgh</a>.
-    </p>
+        <!-- Research interests -->
+        <section id="research" aria-labelledby="ri-h">
+          <h2 id="ri-h">Research interests</h2>
+          <ul>
+            <li>Language Policy and Planning (LPP)</li>
+            <li>Language vitality and revitalization</li>
+            <li>Language and identity; decolonization</li>
+            <li>Language activism; digital infrastructures</li>
+            <li>Taiwanese languages; Southern Min varieties</li>
+          </ul>
+        </section>
 
-    <!-- New short overview for general audience -->
-    <br>
-    <p>
-        Broadly, my work explores how languages live, change, and survive in multilingual societies. 
-        I am especially interested in how communities and institutions support language revitalization, 
-        and how digital tools shape the way we use and sustain languages today.
-    </p>
-
-    <!-- Your detailed PhD description remains -->
-    <br>
-    <p>
-        My PhD thesis, <i>Reviving Bú-gí: An Investigation of Language Policy and Language Management in Taiwan</i>, 
-        examined how policies, digital infrastructures, and local practices shape the revitalization of Indigenous and minoritized languages in Taiwan. 
-        Using a mixed methodology, it consisted of three studies focusing on key areas of <i>Language Policy and Planning (LPP)</i>: 
-        <b>status planning</b> (Taiwan’s shift from official monolingualism to multilingualism, introducing the concept of <i>“Mandarin-inclusive”</i>), 
-        <b>language management</b> (policy implementation across macro and micro levels), 
-        and <b>corpus planning</b> (using digital ethnography and digital discourse analysis to study the standardization of written forms and the role of digital tools).
-    </p>
-
-    <br>
-    <p class="location"><i>I am based out of Edinburgh, Scotland, & Urbana, Illinois, USA.</i></p>
-</div><h2>About</h2>
-       
-<div class="main"></div>
-
-        <div class="edu">
-            <div class ed><h2>Education</h2></div>
-
-            <div class="phd"><h3>Doctorate of Philosophy (PhD)</h3>
-                <p><i>2025 September</i></p>
-                <p><a href="https://www.ed.ac.uk/" target="_blank">University of Edinburgh</a></p>
-                <p>Linguistics</p>
-                <br>
-                <p>*Junior visiting scholar at <a href="https://www1.ihp.sinica.edu.tw/en" target="_blank">Institute of History and Philology, Academia Sinica</a> <i>2023 June - August</i></p>
-            </div>
-            
-            <div class="msc">
-                <h3>Master of Science (MSc)</h3>
-                <p><i>2018 November</i></p>
-                <p><a href="https://www.ed.ac.uk/" target="_blank">University of Edinburgh</a></p>
-               <p>Applied Linguistics</p>
-            </div>
-
-            <div class="ba"><h3>Bachelor of Arts (BA)</h3>
-                <p><i>2017 April</i></p>
-                <p><a href="https://www.northcentralcollege.edu/" target="_blank">North Central College</a> & <a href="https://eng.thu.edu.tw/" target="_blank">Tunghai University</a></p>
-                <p>Chinese and English Language teaching and learning</p>
-            </div>
-
-        </div>
-
-<div class="sidebar">
-            <div class="langlist">
-                <div class="langh2">
-                    <h2>My languages</h2>
-                </div>
-                <div class="c2"><h4>Native/C2</h4>
-                    <ul>
-                        <li><strong>華語</strong> Mandarin</li>
-                        <li><strong>English</strong> 英語</li>
-                    </ul>
-                </div>
-                <div class="b2"><h4>B2-C1</h4>
-                    <ul>
-                        <li><strong>台語</strong> Tâi-gí</li>
-                        <li><strong>Magyar</strong> Hungarian</li>
-                        <li><strong>Deuthsch</strong> German</li>
-                    </ul>
-                </div>
-                <div class="a2"><h4>A1-B1</h4>
-                    <ul>
-                        <li><strong>粵語</strong> Cantonese</li>
-                        <li><strong>B. Melayu</strong> Malay</li>
-                        <li><strong>日本語</strong> Japanese</li>
-                        <li><strong>Français</strong> French</li>
-                        <li><strong>יידיש </strong> Yiddish</li>
-                        <li><strong>Português</strong> Portuguese</li>
-                        <li><strong>Español</strong> Spanish</li>
-                    </ul>
-                </div>
-                <div class="mis">
-                    <p>*These are ordered using <a href="https://www.coe.int/en/web/common-european-framework-reference-languages/level-descriptions" target="_blank">CEFR</a></p>
-                </div>
-            </div>
-               
-        </div>
-
-        <div class="research">
-            <h2>Research Interests</h2>
+        <!-- Skills -->
+        <section id="skills" aria-labelledby="skills-h">
+          <h2 id="skills-h">Research & technical skills</h2>
+          <div class="grid-2">
             <ul>
-                <li>Language Policy and Planning (LLP)</li>
-                <li>Language Vitality</li>
-                <li>Language Revitalisation</li>
-                <li>Language and Identity</li>
-                <li>Language and Decolonisation</li>
-                <li>Language Activism</li>
-                <li>Taiwanese Languages</li>
-                <li>Southern Min Language Varieties</li>
+              <li>Content & policy analysis</li>
+              <li>Ethnography</li>
+              <li>Digital / social‑media analysis</li>
+              <li>Corpus construction & analysis</li>
             </ul>
-        </div>
-
-        <div class="techskill">
-            <h2>Research Skills & Technical</h2>
             <ul>
-                <li>Content analysis</li>
-                <li>Policy analysis</li>
-                <li>Ethnography</li>
-                <li>Digital/Social Media analysis</li>
-                <li>Corpus construction</li>
-                <li>Corpus analysis</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Python</li>
-                <li>R</li>
-                <li>Exel/Google Sheets</li>
+              <li>HTML, CSS</li>
+              <li>Python, R</li>
+              <li>Excel / Google Sheets</li>
             </ul>
-        </div>
+          </div>
+        </section>
 
-        <div class="mia">
-            
-        </div>
+        <!-- Activities: publications, teaching, other -->
+        <section id="activities" aria-labelledby="act-h">
+          <h2 id="act-h">Academic & educational activities</h2>
+          <div class="card">
+            <h3>Publications & papers</h3>
+            <ul>
+              <li>Huan‑Wells, J. (2022). Mandarin‑plus to Mandarin‑inclusive: Conceptualising the new pluralistic language policy in Taiwan. <em>Multiethnica</em>, 42, 45–62. <a href="https://doi.org/10.33063/diva-505199" target="_blank" rel="noopener">https://doi.org/10.33063/diva-505199</a></li>
+              <li>Wells, J. (2019). <em>Mandarin‑plus to Mandarin‑Inclusive: Conceptualising Language Policy in Taiwan</em> [Conference paper]. Multidisciplinary Approaches in Language Policy and Planning Conference, Toronto, Canada.</li>
+            </ul>
+            <p class="small"><em>I publish as <a href="https://www.researchgate.net/profile/Jozsef-Huan-Wells" target="_blank" rel="noopener"><strong>József Huan‑Wells</strong></a>.</em></p>
+          </div>
 
-        <div class="acont"><h3>Academic and Educational Activities</h3>
+          <div class="card" style="margin-top:1rem;">
+            <h3>Teaching</h3>
+            <p><strong>University</strong></p>
+            <ul>
+              <li>Issues in Applied Linguistics (postgraduate)</li>
+              <li>Linguistics and English Language 1A (undergraduate)</li>
+              <li>Linguistics and English Language 1B (undergraduate)</li>
+            </ul>
+            <p><strong>K–12</strong></p>
+            <ul>
+              <li>Spanish–English Bilingual Special Education (grades 6–8)</li>
+              <li>Spanish Language Arts (grades 6–8)</li>
+              <li>French Language Arts (grades 6–8)</li>
+              <li>Reading & Math Intervention / Special Education (grades 6–12)</li>
+              <li>ELL (K–12)</li>
+            </ul>
+          </div>
 
-        <div class="publications">
-            <h4>Publications and Papers</h4>
-            <div class="csl-bib-body">
-                <div class="csl-entry">Huan-Wells, J. (2022). Mandarin-plus to Mandarin-inclusive : Conceptualising the New Pluralistic Language Policy in Taiwan. <i>Multiethnica</i>, <i>42</i>, 45–62. https://doi.org/10.33063/diva-505199</div>
-              </div>
+          <div class="card" style="margin-top:1rem;">
+            <h3>Other</h3>
+            <ul>
+              <li>Reviewer, Journal of the Undergraduate Linguistics Association of Britain (UK)</li>
+              <li>Co‑ordinator, Language in Context Seminars, University of Edinburgh (Scotland)</li>
+            </ul>
+          </div>
+        </section>
+      </div>
 
-              <br>
+      <!-- Sidebar -->
+      <aside class="sidebar" aria-labelledby="lang-h">
+        <section>
+          <h2 id="lang-h">Languages</h2>
+          <div class="card">
+            <h3 class="small mono" aria-label="CEFR level">Native / C2</h3>
+            <ul>
+              <li><strong lang="zh-Hant">華語</strong> (Mandarin)</li>
+              <li><strong>English</strong></li>
+            </ul>
+            <h3 class="small mono">B2–C1</h3>
+            <ul>
+              <li><strong lang="nan">台語</strong> (Tâi‑gí)</li>
+              <li><strong>Magyar</strong> (Hungarian)</li>
+              <li><strong>Deutsch</strong> (German)</li>
+            </ul>
+            <h3 class="small mono">A1–B1</h3>
+            <ul>
+              <li><strong lang="yue-Hant">粵語</strong> (Cantonese)</li>
+              <li><strong>Bahasa Melayu</strong> (Malay)</li>
+              <li><strong>日本語</strong> (Japanese)</li>
+              <li><strong>Français</strong> (French)</li>
+              <li><strong>יידיש</strong> (Yiddish)</li>
+              <li><strong>Português</strong> (Portuguese)</li>
+              <li><strong>Español</strong> (Spanish)</li>
+            </ul>
+            <p class="small">* Ordered using <a href="https://www.coe.int/en/web/common-european-framework-reference-languages/level-descriptions" target="_blank" rel="noopener">CEFR</a>.</p>
+          </div>
+        </section>
+      </aside>
+    </main>
 
-              <div>Wells, J. (2019). <i>Mandarin-plus to Mandarin-Inclusive: Conceptualising Language Policy in Taiwan</i> [Paper presentation]. Multidisciplinary Approaches in Language Policy and Planning Conference 2019, Toronto Canada.</div>
+    <footer>
+      <p class="small">© <span id="y"></span> József Huan‑Wells</p>
+    </footer>
+  </div>
 
-              <br>
-
-            <p class="disclaim"><i>*I publish under the name <a href="https://www.researchgate.net/profile/Jozsef-Huan-Wells" target="_blank"><strong>József Huan-Wells.</strong></a></i></p>
-        </div>
-
-        <div class="teaching">
-            <h4>Teaching/Tutoring - University</h4>
-            <p>Issues in Applied Linguistics, <i>postgraduate</i></p>
-            <p>Linguistics and English Language 1A, <i>undergraduate</i></p>
-            <p>Linguistics and English Language 1B, <i>undergraduate</i></p>
-            <h4>Teaching - K-1</h4>
-            <p>Spanish-English Bilingual Special Education, <i>6-8 grade</i></p>
-            <p>Spanish Language arts, <i>6-8 grade</i></p>
-            <p>French Language arts, <i>6-8 grade</i></p>
-            <p>Reading and Math intervention/Special Education, <i>6-12 grade</i></p>
-            <p>ELL, <i>K-12</i></p>
-        </div>
-
-        <div class="otheract">
-        <h4>Other</h4>
-            <p>Reviewer of the Journal of the Undergraduate Linguistics Association of Britain, <i>United Kingdom</i></p>
-            <p>Co-Ordinator of the Language in Context Seminars, <i>University of Edinburgh, Scotland</i></p>
-        </div>
-        </div>
-        <div class="footer"><h5></h5></div>
-    </div>
-    
-
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script>
+    // tiny progressive enhancement
+    (function(){
+      var y = document.getElementById('y');
+      if (y) y.textContent = new Date().getFullYear();
+    })();
+  </script>
 </body>
 </html>
