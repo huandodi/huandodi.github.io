@@ -1,178 +1,259 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nan">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>HUAN József</title>
-    <link href="style.css" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>潘悅朗 HUAN József — Dódi</title>
+  <meta name="description" content="Tâi‑gí profile of József Huan‑Wells (潘悅朗): gián‑kiù, ha̍k‑le̍k, gí‑giân, kap kî‑tha ki‑lêng; language policy, vitality, revitalisation." />
+  <style>
+    /* ——— Base ——— */
+    :root {
+      --bg: #ffffff;
+      --fg: #0f172a; /* slate-900 */
+      --muted: #475569; /* slate-600 */
+      --link: #0ea5e9; /* sky-500 */
+      --border: #e2e8f0; /* slate-200 */
+      --accent: #0ea5e9;
+      --maxw: 72rem;
+    }
+    html { box-sizing: border-box; }
+    *, *::before, *::after { box-sizing: inherit; }
+    body {
+      margin: 0; background: var(--bg); color: var(--fg);
+      font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
+    }
+    a { color: var(--link); text-decoration: none; }
+    a:hover, a:focus { text-decoration: underline; }
+
+    /* ——— Layout ——— */
+    .wrap { max-width: var(--maxw); margin: 0 auto; padding: 2rem 1rem 4rem; }
+    header { border-bottom: 1px solid var(--border); margin-bottom: 1.5rem; }
+    .name { display: flex; align-items: baseline; gap: .75rem; flex-wrap: wrap; }
+    .name h1 { font-size: clamp(1.6rem, 3vw, 2.2rem); margin: 0.5rem 0 0.25rem; }
+    .name .han { font-weight: 500; color: var(--muted); }
+    .nav { display: flex; gap: .5rem; flex-wrap: wrap; margin: .5rem 0 1rem; }
+    .nav a { padding: .25rem .5rem; border-radius: .375rem; border: 1px solid var(--border); }
+
+    main { display: grid; gap: 2rem; }
+    @media (min-width: 900px) {
+      main { grid-template-columns: 2fr 1fr; align-items: start; }
+      .sidebar { position: sticky; top: 1rem; }
+    }
+
+    section { padding-block: .5rem; }
+    section h2 { font-size: 1.15rem; letter-spacing: .01em; margin: 0 0 .75rem; }
+
+    /* ——— Typographic utilities ——— */
+    .lead { color: var(--muted); }
+    .small { font-size: .9375rem; color: var(--muted); }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
+
+    /* ——— Lists ——— */
+    ul { padding-left: 1.15rem; margin: .25rem 0 .75rem; }
+    li { margin: .15rem 0; }
+
+    /* ——— Cards ——— */
+    .card { border: 1px solid var(--border); border-radius: .75rem; padding: 1rem; }
+    .grid-2 { display: grid; gap: 1rem; }
+    @media (min-width: 700px) { .grid-2 { grid-template-columns: 1fr 1fr; } }
+
+    /* ——— Definition list ——— */
+    dl { margin: 0; }
+    dt { font-weight: 600; }
+    dd { margin: 0 0 .75rem 0; }
+
+    /* ——— Footer ——— */
+    footer { border-top: 1px solid var(--border); margin-top: 2rem; padding-top: 1rem; }
+
+    /* ——— Print ——— */
+    @media print {
+      .nav, .lang-switch { display: none !important; }
+      body { color: #000; }
+      a { color: #000; text-decoration: underline; }
+      .wrap { padding: 0; }
+      header, footer { border: 0; }
+    }
+  </style>
 </head>
 <body>
-    <div class="grid">
-        <div class="title">
-           <div class="name">
-                <h1>潘悅朗 HUAN József</h1>
-                <h2>"Dódi"</h2>
-            </div> 
+  <div class="wrap">
+    <header>
+      <div class="name" aria-label="Name">
+        <h1>HUAN József <span class="small">“Dódi”</span></h1>
+        <span class="han" lang="zh-Hant">潘悅朗</span>
+      </div>
+      <nav class="nav lang-switch" aria-label="Language links">
+        <a href="index.html" target="_blank" rel="noopener">English</a>
+        <a href="tgb_home.html" target="_blank" rel="noopener">Tâi‑gí‑bûn</a>
+        <a href="hyw_home.html" target="_blank" rel="noopener">華語文</a>
+      </nav>
+      <nav class="nav" aria-label="Social links">
+        <a href="https://g0v.social/@dodi" target="_blank" rel="me noopener">Mastodon</a>
+        <a href="https://twitter.com/dodiiat" target="_blank" rel="noopener">Twitter</a>
+        <a href="https://www.instagram.com/dodiatlong/" target="_blank" rel="noopener">Instagram</a>
+      </nav>
+    </header>
 
-            <div class="socials">
-                <a class="mastodon-logo" href="https://g0v.social/@dodi" target="_blank">
-                    <ion-icon name="logo-mastodon"></ion-icon></a>
+    <main>
+      <div class="content">
+        <!-- About -->
+        <section id="about" aria-labelledby="about-h">
+          <h2 id="about-h">Góa sī siáng</h2>
+          <p class="lead">Ta̍k-ke-hó, góa sī Dódi.</p>
+          <p>
+            Góa sī <a href="https://www.ed.ac.uk/" target="_blank" rel="noopener">Edinburgh Tāi-ha̍k</a>
+            <a href="https://www.ed.ac.uk/ppls/linguistics-and-english-language" target="_blank" rel="noopener">Tiat-ha̍k, Sim-lí-ha̍k kap Gí-giân-kho-ha̍k Ha̍k-īⁿ</a>
+            ê <a href="https://www.ed.ac.uk/profile/jozsef-wells" target="_blank" rel="noopener">gí-giân-ha̍k phok-sū āu-soán-lâng</a>.
+            Góa gián-kiù Tâi-oân pún-thó͘-gí-giân <em>Gí-giân Chèng-chhek kap Kè-ōe (Language Policy and Planning | LPP)</em>, koh tùi pún-thó͘-gí-giân ê <em>Gí-giân Oa̍h-le̍k (Language Vitality)</em> ū hèng-chhù.
+          </p>
+          <p>
+            <span class="small">2023.06–2023.08 tī <a href="https://www1.ihp.sinica.edu.tw/en/People/Visiting" target="_blank" rel="noopener">Tiong-iang Gián-kiù-īⁿ ê Le̍k-sú kap Gí-bûn-ha̍k Ha̍k-īⁿ</a> chò hóng-būn-ha̍k-chiá.</span>
+          </p>
+          <p class="small"><em>Góa it-poaⁿ tòa tī Edinburgh, Scotland, & Urbana, Illinois, USA.</em></p>
+        </section>
 
+        <!-- Education -->
+        <section id="education" aria-labelledby="edu-h">
+          <h2 id="edu-h">Ha̍k-le̍k</h2>
+          <div class="card">
+            <dl>
+              <dt>Tiat-ha̍k-phok-sū (PhD), Gí-giân-ha̍k</dt>
+              <dd><span class="small"><a href="https://www.ed.ac.uk/" target="_blank" rel="noopener">University of Edinburgh</a> — <em>Hi-bāng tī 2024.06 oân-sêng</em></span></dd>
 
-                <a class="twitter-logo" href="https://twitter.com/dodiiat" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
+              <dt>Kho-ha̍k-se̍k-sū (MSc), Èng-iōng Gí-giân-ha̍k</dt>
+              <dd><span class="small"><a href="https://www.ed.ac.uk/" target="_blank" rel="noopener">University of Edinburgh</a> — <time datetime="2018-10">2018.10</time></span></dd>
 
-                <a class="instagram-logo" href="https://www.instagram.com/dodiatlong/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
-            </div>
-             
-            <div class="langlink">
-                <p><a href="index.html" target="_blank">English</a> | <a href="tgb_home.html" target="_blank">Tâi-gí-bûn</a> | <a href="hyw_home.html" target="_blank">華語文</a></p>
-            </div>
-            
-        </div>
-        
-        <div class="header">
-            <h2>Góa sī siáng</h2>
-            <p id="Basics">Ta̍k-ke-hó, góa sī Dódi。<br><br>Góa sī <a href="https://www.ed.ac.uk/" target="_blank">Edinburgh Tāi-ha̍k</a><a href="https://www.ed.ac.uk/ppls/linguistics-and-english-language" target="_blank">Tiat-ha̍k, Sim-lí-ha̍k kap Gí-giân-kho-ha̍k Ha̍k-īⁿ</a> ê <a href="https://www.ed.ac.uk/profile/jozsef-wells" target="_blank">gí-giân-ha̍k phok-sū āu-soán-lâng</a>. Góa gián-kiù Tâi-oân pún-thó͘-gí-giân (本土語言）<i>Gí-giân Chèng-chhek kap Kè-ōe (Language Policy and Planning | LPP)</i>, koh tùi pún-thó͘-gí-giân ê <i>Gí-giân Oa̍h-le̍k (Language Vitality)</i> ū hèng-chhù.</p>
-            
-            <br><p class="location">2023 2023.06-2023.08, tī <a href="https://www1.ihp.sinica.edu.tw/en/People/Visiting" target="_blank">Tiong-iang Gián-kiù-īⁿ ê Le̍k-sú kap Gí-bûn-ha̍k Ha̍k-īⁿ</a> chò hóng-būn-ha̍k-chiá.</p>
-            <p class="location"><i>Góa it-poaⁿ tòa tī Edinburgh, Scotland, & Urbana, Illinois, USA.</i></p>
-            
+              <dt>Bûn-ha̍k-ha̍k-sū (BA), Hôa-gí-bûn kap Eng-gí-bûn Kàu-ha̍k</dt>
+              <dd><span class="small"><a href="https://www.northcentralcollege.edu/" target="_blank" rel="noopener">North Central College</a> & <a href="https://eng.thu.edu.tw/" target="_blank" rel="noopener">Tunghai University</a> — <time datetime="2017-04">2017.04</time></span></dd>
+            </dl>
+          </div>
+        </section>
 
-        </div>
-       
-        <div class="main"></div>
+        <!-- Research interests -->
+        <section id="research" aria-labelledby="ri-h">
+          <h2 id="ri-h">Gián-kiù hèng-chhù</h2>
+          <ul>
+            <li>Gí-giân Chèng-chhek kap Kè-ōe (Language Policy and Planning | LPP)</li>
+            <li>Gí-giân Oa̍h-le̍k (Language Vitality)</li>
+            <li>Gí-giân Ho̍k-chín (Language Revitalisation)</li>
+            <li>Gí-giân kap Jīn-tông (Language and Identity)</li>
+            <li>Gí-giân-hêng-tōng; thoat-si̍t-bîn-hòa</li>
+            <li>Tâi-oân pún-thó͘-gí-giân; Bân-lâm-gí (≠ Tâi-gí)</li>
+          </ul>
+        </section>
 
-        <div class="edu">
-            <div class ed><h2>Ha̍k-le̍k</h2></div>
-
-            <div class="phd"><h3>Tiat-ha̍k-phok-sū (PhD)</h3>
-                <p><i>Hi-bāng tī 2024.06 oân-sêng</i></p>
-                <p><a href="https://www.ed.ac.uk/" target="_blank">University of Edinburgh</a></p>
-                <p>Gí-giân-ha̍k</p></div>
-            
-            <div class="msc">
-                <h3>Kho-ha̍k-se̍k-sū (MSc)</h3>
-                <p><i>2018.10</i></p>
-                <p><a href="https://www.ed.ac.uk/" target="_blank">University of Edinburgh</a></p>
-               <p>Èng-iōng Gí-giân-ha̍k</p>
-            </div>
-
-            <div class="ba"><h3>Bûn-ha̍k-ha̍k-sū (BA)</h3>
-                <p><i>2017.04</i></p>
-                <p><a href="https://www.northcentralcollege.edu/" target="_blank">North Central College</a> & <a href="https://eng.thu.edu.tw/" target="_blank">Tunghai University</a></p>
-                <p>Hôa-gí-bûn kap Eng-gí-bûn Kàu-ha̍k</p>
-            </div>
-
-        </div>
-
-        <div class="sidebar">
-            <div class="langlist">
-                <div class="langh2">
-                    <h2>Góa ê gí-giân</h2>
-                </div>
-                <div class="c2"><h4>Bú-gí/C2</h4>
-                    <ul>
-                        <li><strong>華語</strong> Hôa-gí</li>
-                        <li><strong>English</strong> Eng-gí</li>
-                    </ul>
-                </div>
-                <div class="b2"><h4>B2-C1</h4>
-                    <ul>
-                        <li><strong>台語</strong> Tâi-gí</li>
-                        <li><strong>Magyar</strong> Hông-gâ-lī-gí</li>
-                        <li><strong>粵語</strong> Kńg-tang-oē</li>
-                        <li><strong>Deuthsch</strong> Tek-gí</li>
-                        <li><strong>יידיש </strong> Iû-thài-ōe</li>
-                    </ul>
-                </div>
-                <div class="a2"><h4>A1-B1</h4>
-                    <ul>
-                        <li><strong>B. Melayu</strong> Má-lâi-se-a-gí</li>
-                        <li><strong>日本語</strong> Ji̍t-gí</li>
-                        <li><strong>Français</strong> Hoat-gí</li>
-                        <li><strong>Português</strong> Phû-tô-gâ-gí</li>
-                        <li><strong>Español</strong> Se-pan-gâ-gí</li>
-                    </ul>
-                </div>
-                <div class="mis">
-                    <p>*These are ordered using <a href="https://www.coe.int/en/web/common-european-framework-reference-languages/level-descriptions" target="_blank">CEFR</a></p>
-                </div>
-            </div>
-               
-        </div>
-
-        <div class="research">
-            <h2>Gián-kiù hèng-chhù</h2>
+        <!-- Skills -->
+        <section id="skills" aria-labelledby="skills-h">
+          <h2 id="skills-h">Gián-kiù kap kî-tha ki-lêng</h2>
+          <div class="grid-2">
             <ul>
-                <li>Gí-giân Chèng-chhek kap Kè-ōe (Language Policy and Planning | LLP)</li>
-                <li>Gí-giân Oa̍h-le̍k (Language Vitality)</li>
-                <li>Gí-giân Ho̍k-chín (Language Revitalisation)</li>
-                <li>Gí-giân kap Jīn-tông (Language and Identity)</li>
-                <li>Gí-giân kap Thoat-si̍t-bîn-hòa</li>
-                <li>Gí-giân-hêng-tōng</li>
-                <li>Tâi-oân pún-thó͘-gí-giân</li>
-                <li>Bân-lâm-gí (≠ Tâi-gí)</li>
+              <li>Lāi-iông hun-sek (Content analysis)</li>
+              <li>Gí-liāu-khò͘ kò͘-sêng (Corpus construction)</li>
+              <li>Gí-liāu-khò͘ hun-sek (Corpus analysis)</li>
+              <li>Digital/social‑media hun-sek</li>
+              <li>Ethnography; discourse/CDA</li>
             </ul>
-        </div>
-
-        <div class="techskill">
-            <h2>Gián-kiù kap kî-tha ki-lêng</h2>
             <ul>
-                <li>Lāi-iông hun-sek (Content analysis)</li>
-                <li>Gí-liāu-khò͘ kò͘-sêng (Corpus construction)</li>
-                <li>Gí-liāu-khò͘ hun-sek (Corpus analysis)</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Python</li>
-                <li>R</li>
-                <li>Exel/Google Sheets</li>
+              <li>HTML, CSS</li>
+              <li>Python, R</li>
+              <li>Excel / Google Sheets</li>
             </ul>
-        </div>
+          </div>
+        </section>
 
-        <div class="mia">
-            <h3>Góa ê sèⁿ-miâ</h3>
-            <p><b>Huan</b> <small>[hɔan]</small> sī Má-lâi-se-a Hok-kiàn-ōe ê sèⁿ-sī - Tâi-gí im sī "Phoaⁿ"<a href="https://en.wikipedia.org/wiki/Pan_(surname)" target="_blank">潘</a>.<br><b>József</b> <small>[ˈjoːʒɛf] (𐲒𐳜𐳰𐳉𐳌) </small> sī Hiong-gâ-lī-bûn ê miâ,  sī Hiong-gâ-lī--hòa ê Hi-pek-lâi ê <a href="https://en.wikipedia.org/wiki/Yosef" target="_blank">יוֹסֵף <i>Yōsef</i></a>.</p>
+        <!-- Name / Etymology -->
+        <section id="name" aria-labelledby="name-h">
+          <h2 id="name-h">Góa ê sèⁿ-miâ</h2>
+          <div class="card">
+            <p><strong>Huan</strong> <small>[hɔan]</small> sī Má-lâi-se-a Hok-kiàn-ōe ê sèⁿ-sī — Tâi-gí im sī “Phoaⁿ” (<a href="https://en.wikipedia.org/wiki/Pan_(surname)" target="_blank" rel="noopener">潘</a>).
+            <br><strong>József</strong> <small>[ˈjoːʒɛf] (𐲒𐳜𐳰𐳉𐳌)</small> sī Hiong-gâ-lī-bûn ê miâ, lâi-têng <a href="https://en.wikipedia.org/wiki/Yosef" target="_blank" rel="noopener">יוֹסֵף <em>Yōsef</em></a>.</p>
+            <p class="small"><strong>潘</strong> ㄏㄨㄢ Hoan. <a href="https://thak.taigi.info/1913KamJitian/chheh/?page=289" target="_blank" rel="noopener">悅</a> ㄩㄝˋ ia̍t. <a href="https://thak.taigi.info/1913KamJitian/chheh/?page=457" target="_blank" rel="noopener">朗</a> ㄌㄤˇ lóng.</p>
+          </div>
+        </section>
 
-            <br><p><b>潘</b> ㄏㄨㄢ Hoan.<a href="https://thak.taigi.info/1913KamJitian/chheh/?page=289" target="_blank"><br><b>悅</b></a> ㄩㄝˋ ia̍t. <a href="https://thak.taigi.info/1913KamJitian/chheh/?page=457" target="_blank"><br><b>朗</b></a> ㄌㄤˇ lóng.</p>
-        </div>
+        <!-- Activities: publications, teaching, other -->
+        <section id="activities" aria-labelledby="act-h">
+          <h2 id="act-h">Ha̍k-sū Kòng-hiàn</h2>
+          <div class="card">
+            <h3>Chhut-khan bûn-hiàn kap káng-chō</h3>
+            <ul>
+              <li>Huan‑Wells, J. (2022). Mandarin‑plus to Mandarin‑inclusive: Conceptualising the new pluralistic language policy in Taiwan. <em>Multiethnica</em>, 42, 45–62. <a href="https://doi.org/10.33063/diva-505199" target="_blank" rel="noopener">https://doi.org/10.33063/diva-505199</a></li>
+              <li>Wells, J. (2019). <em>Mandarin‑plus to Mandarin‑Inclusive: Conceptualising Language Policy in Taiwan</em> [Paper presentation]. Multidisciplinary Approaches in Language Policy and Planning Conference 2019, Toronto, Canada.</li>
+            </ul>
+            <p class="small"><em>*I publish under the name <a href="https://www.researchgate.net/profile/Jozsef-Huan-Wells" target="_blank" rel="noopener"><strong>József Huan‑Wells</strong></a>.</em></p>
+          </div>
 
-        <div class="acont"><h3>Ha̍k-sū Kòng-hiàn<small><i>(shortened)</i></small></h3>
+          <div class="card" style="margin-top:1rem;">
+            <h3>Kà-kòe--ê khò-têng</h3>
+            <p><strong>University</strong></p>
+            <ul>
+              <li>Èng-iōng-gí-giân-ha̍k kài-lūn (Issues in Applied Linguistics), <em>postgraduate</em></li>
+              <li>Gí-giân-ha̍k kap Eng-gí-bûn 1A (Linguistics and English Language 1A), <em>undergraduate</em></li>
+              <li>Gí-giân-ha̍k kap Eng-gí-bûn 1B (Linguistics and English Language 1B), <em>undergraduate</em></li>
+            </ul>
+            <p><strong>K–12</strong></p>
+            <ul>
+              <li>Spanish–English Bilingual Special Education (6–8)</li>
+              <li>Spanish Language Arts (6–8)</li>
+              <li>French Language Arts (6–8)</li>
+              <li>Reading & Math Intervention / Special Education (6–12)</li>
+              <li>ELL (K–12)</li>
+            </ul>
+          </div>
 
+          <div class="card" style="margin-top:1rem;">
+            <h3>Other</h3>
+            <ul>
+              <li>Reviewer, Journal of the Undergraduate Linguistics Association of Britain, <em>United Kingdom</em></li>
+              <li>Co‑Ordinator, Language in Context Seminars, <em>University of Edinburgh, Scotland</em></li>
+            </ul>
+          </div>
+        </section>
+      </div>
 
-        <div class="publications">
-            <h4>Chhut-khan bûn-hiàn kap káng-chō</h4>
-            <div class="csl-bib-body">
-                <div class="csl-entry">Huan-Wells, J. (2022). Mandarin-plus to Mandarin-inclusive : Conceptualising the New Pluralistic Language Policy in Taiwan. <i>Multiethnica</i>, <i>42</i>, 45–62. https://doi.org/10.33063/diva-505199</div>
-              </div>
+      <!-- Sidebar: Languages -->
+      <aside class="sidebar" aria-labelledby="lang-h">
+        <section>
+          <h2 id="lang-h">Góa ê gí-giân</h2>
+          <div class="card">
+            <h3 class="small mono" aria-label="CEFR level">Bú-gí / C2</h3>
+            <ul>
+              <li><strong lang="zh-Hant">華語</strong> Hôa-gí</li>
+              <li><strong>English</strong> Eng-gí</li>
+            </ul>
+            <h3 class="small mono">B2–C1</h3>
+            <ul>
+              <li><strong lang="nan">台語</strong> Tâi-gí</li>
+              <li><strong>Magyar</strong> Hông-gâ-lī-gí</li>
+              <li><strong>Deutsch</strong> Tek-gí</li>
+            </ul>
+            <h3 class="small mono">A1–B1</h3>
+            <ul>
+              <li><strong lang="yue-Hant">粵語</strong> Kńg-tang-oē</li>
+              <li><strong>Español</strong> Se-pan-gâ-gí</li>
+              <li><strong>Français</strong> Hoat-gí</li>
+              <li><strong>Português</strong> Phû-tô-gâ-gí</li>
+              <li><strong>日本語</strong> Ji̍t-gí</li>
+              <li><strong>יידיש</strong> Iû-thài-ōe</li>
+              <li><strong>Bahasa Melayu</strong></li>
+            </ul>
+            <p class="small">* Ordered using <a href="https://www.coe.int/en/web/common-european-framework-reference-languages/level-descriptions" target="_blank" rel="noopener">CEFR</a>.</p>
+          </div>
+        </section>
+      </aside>
+    </main>
 
-              <br>
+    <footer>
+      <p class="small">huanjozsi [at] gmail [dot] com · © <span id="y"></span> József Huan‑Wells</p>
+    </footer>
+  </div>
 
-              <div>Wells, J. (2019). <i>Mandarin-plus to Mandarin-Inclusive: Conceptualising Language Policy in Taiwan</i> [Paper presentation]. Multidisciplinary Approaches in Language Policy and Planning Conference 2019, Toronto Canada.</div>
-
-              <br>
-
-            <p class="disclaim"><i>*I publish under the name <a href="https://www.researchgate.net/profile/Jozsef-Huan-Wells" target="_blank"><strong>József Huan-Wells.</strong></a></i></p>
-        </div>
-
-        <div class="teaching">
-            <h4>Kà-kòe--ê khò-têng</h4>
-            <p>Èng-iōng-gí-giân-ha̍k kài-lūn (Issues in Applied Linguistics), <i>postgraduate</i></p>
-            <p>Gí-giân-ha̍k kap Eng-gí-bûn 1A (Linguistics and English Language 1A), <i>undergraduate</i></p>
-            <p>Gí-giân-ha̍k kap Eng-gí-bûn 1B (Linguistics and English Language 1B), <i>undergraduate</i></p>
-
-        </div>
-
-        <div class="otheract">
-        <h4>Other</h4>
-            <p>Reviewer of the Journal of the Undergraduate Linguistics Association of Britain, <i>United Kingdom</i></p>
-            <p>Co-Ordinator of the Language in Context Seminars, <i>University of Edinburgh, Scotland</i></p>
-        </div>
-        </div>
-        <div class="footer"><h5>huanjozsi [at] gmail [dot] com</h5></div>
-    </div>
-    
-
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script>
+    (function(){
+      var y = document.getElementById('y');
+      if (y) y.textContent = new Date().getFullYear();
+    })();
+  </script>
 </body>
 </html>
